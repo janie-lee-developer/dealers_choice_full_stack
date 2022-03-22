@@ -55,6 +55,32 @@ router.get('/:authorId/stories', async (req, res, next) => {
     catch (error) {
         next(error)
     }
+});
+
+// CREATE AUTHOR
+router.post('/', async(req, res, next)=> {
+    try {
+// { name: authorName, bio: authorBio, imageUrl: authorImageUrl }
+        const newAuthor = await Author.create({...req.body});
+        res.status(201).send(newAuthor);
+    }
+    catch(err){
+        next(err)
+    }
 })
+
+
+// UPDATE AUTHOR
+router.put('/:id', async(req, res, next) => {
+    try {
+        const author = await Author.findByPk(req.params.id);
+        const newAuthor = await author.update({...req.body});
+
+        res.status(201).send(newAuthor)
+    } catch(ex) {
+        next(ex)
+    }
+})
+
 
 module.exports = router

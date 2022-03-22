@@ -4,8 +4,7 @@ const { TEXT, STRING } = conn.Sequelize;
 
 const Story = conn.define('story', {
     title: STRING,
-    content: TEXT,
-    imageUrl: STRING
+    content: TEXT
 })
 
 module.exports = Story;

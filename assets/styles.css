@@ -86,6 +86,10 @@ h3 {
     margin-right: 10px;
 }
 
+.bttn-row {
+    margin-bottom: 1.3rem;
+}
+
 /* authors */
 .authors {
     margin-top: 5rem;
@@ -167,3 +171,30 @@ h3 {
 #single-author-nav a:hover {
     color: grey;
 }
+
+/*  create post */
+#story-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+#story-form input{
+    margin-bottom: 1.5rem;
+}
+
+#story-form textarea{
+    margin-bottom: 1.5rem;
+}
+
+.submitBttn {
+    margin: auto;
+    width: 20%;
+    padding: 1rem;
+    background-color: gainsboro;
+}
+

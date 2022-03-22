@@ -39,7 +39,7 @@ const syncAndSeed = async () => {
     // setting each author 3 random stories and then creating 2 cmnt for each story.
     authors.forEach(async (author, i) => {
         for (let i = 1; i < 4; i++) {
-            const story = await Story.create({ title: `${author.name}'s story ${i}`, content: faker.lorem.paragraphs(3), imageUrl: 'defaultStory.png', authorId: author.id });
+            const story = await Story.create({ title: `${author.name}'s story ${i}`, content: faker.lorem.paragraphs(3), authorId: author.id });
             const commenter = generateRandAuthor(author.name);
             await Comment.create({ content: `${author.name}, I love your story! Keep it up!`, storyId: story.id, authorId: commenter.id });
             await Comment.create({ content: `This is amazing!! ${author.name}, you are amazing!`, storyId: story.id, authorId: generateRandAuthor(commenter.name).id});

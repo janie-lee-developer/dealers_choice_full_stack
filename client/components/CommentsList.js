@@ -1,5 +1,8 @@
 import React from 'react'
 
+// react router
+import { Link } from 'react-router-dom';
+
 const CommentsList = (props) => {
     const { comments } = props;
     return (
@@ -8,11 +11,11 @@ const CommentsList = (props) => {
             {console.log('comments', props)}
             {comments.map(comment => {
                 return <div key={comment.id} className='commentRow'>
-                    <img className='cmmtListAuthPic' src={`assets/${comment.author.imageUrl}`} />
                     <div className='column'>
-                        <a>
+                        <Link to={`/authors/${comment.author.id}`} className='authorsLink'>
+                            <img className='cmmtListAuthPic' src={`assets/${comment.author.imageUrl}`} />
                             <h5>{comment.author.name}</h5>
-                        </a>
+                        </Link>
                         <div>{comment.content}</div>
                     </div>
                 </div>
