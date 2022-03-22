@@ -5,4 +5,4 @@
 
 
 ## blog me 2.0
-- Combination of completed redium workshop (react-routes hashroutes and sub-routes) & CRUD functionality.
+- Combination of completed redium workshop (react-routes hashrouter and sub-routes) & CRUD functionality.
