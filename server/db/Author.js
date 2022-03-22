@@ -2,7 +2,7 @@ const conn = require('./conn');
 const { STRING, TEXT } = conn.Sequelize;
 
 
-const Author = db.define('author', {
+const Author = conn.define('author', {
     name: STRING,
     bio: TEXT,
     imageUrl: STRING

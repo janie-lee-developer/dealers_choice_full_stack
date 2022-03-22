@@ -2,7 +2,7 @@ const conn = require('./conn');
 const { TEXT } = conn.Sequelize;
 
 
-const Comment = db.define('comment', {
+const Comment = conn.define('comment', {
     content: TEXT
 })
 

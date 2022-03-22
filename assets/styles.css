@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: .5rem 2rem;
+}
+.navLink {
+    text-decoration: none;
+    color: black;
+    padding: 1em 2rem;
+}
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navLink:hover:not(.active) {
+    background-color: rgb(208, 208, 208);
+}
+
+.active {
+    background-color: rgb(208, 208, 208);
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+/* stories */
+
+div#stories {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+div.story {
+
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid grey 1px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.storyTitle:hover {
+    color: grey;
+}
+
+.authorThumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorThumb:hover {
+    color: grey;
+}
+
+.authorThumbPics {
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* authors */
+.authors {
+    margin-top: 5rem;
+}
+
+div.authors .authorThumbPics {
+    width: 50px;
+}
+
+.authorRow {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 1rem 0 ;
+    border-bottom: grey 1px solid;
+}
+
+.authorsLink {
+    text-decoration: none;
+    color: black;
+}
+
+.authorsLink:hover {
+    color: grey;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* single story */
+.singleStoryHeader {
+    text-align: center;
+}
+
+#single-story {
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cmmtListAuthPic {
+    width: 50px;
+    border-radius: 3rem;
+}
+
+.commentRow {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+/* single Author */
+
+#single-author {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.authorProfilePic {
+    width: 12rem;
+    border-radius: 12rem;
+}
+
+#single-author-nav {
+    background-color: gainsboro;
+    padding: 1rem;
+}
+#single-author-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+#single-author-nav a:hover {
+    color: grey;
+}
